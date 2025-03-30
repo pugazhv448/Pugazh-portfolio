@@ -109,9 +109,8 @@ strong {
   width: 100%;
   margin-left: auto;
   margin-right: auto; 
-  padding-left: .5rem;
-  padding-right: .5rem;
-  /* border: 1px solid red; */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .section{
   margin-top: 2rem;

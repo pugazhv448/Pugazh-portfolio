@@ -61,6 +61,9 @@
   --clr-slate800: #1e293b;
  }
 
+
+
+
  body{
   font-family: 'General sans', sans-serif;
   background-color: var(--clr-dark);
@@ -104,15 +107,25 @@ strong {
 
 .container{
   width: 100%;
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto; 
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin: auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
   /* border: 1px solid red; */
 }
 .section{
   margin-top: 2rem;
+}
+
+
+
+.loading {
+  filter: blur(40px) grayscale(100%);
+}
+.loaded {
+  filter: blur(0) grayscale(0);
+  transition: 0.7s ease-in-out;
+
 }
 
 

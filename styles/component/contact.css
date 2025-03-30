@@ -1,0 +1,138 @@
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+   }
+   
+   .contact-h2 {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-transform: capitalize;
+   }
+   
+   .contact-p {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    max-width: 60ch;
+   }
+   
+   .contact-btn{
+    font-size: var(--size-sm);
+   }
+   
+   .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+   
+   .contact-icons a {
+    background: transparent;
+    border: 0.2rem solid var(--clr-rose);
+    border-radius: 50%;
+    color: var(--clr-rose);
+    transition: 0.3s ease;
+   
+   }
+   
+   .contact-icons a:hover {
+    color: white;
+    transform: scale(1.2) translateY(-5px);
+    background-color: var(--clr-rose);
+    box-shadow: 0 0 25px var(--clr-rose);
+   }
+   
+   
+   
+   
+   @media (min-width: 475px) {
+   
+   .contact {
+    gap: 1.5rem;
+   }
+   
+   .contact-h2 {
+    font-size: var(--size-3xl);
+   
+   }
+   
+   .contact-p {
+    font-size: var(--size-base);
+   
+   }
+   
+   .contact-btn{
+    font-size: var(--size-base);
+   }
+    
+   }
+   
+   
+   /* /* @media (min-width: 640px) {
+     */
+   /* }  */
+   
+   
+   /* @media (min-width: 768px) {
+    
+   } */
+   
+   
+   @media (min-width: 1024px) {
+   
+    
+    .contact-h2 {
+     font-size: var(--size-4xl);
+    
+    }
+    
+    .contact-p {
+     font-size: var(--size-l);
+    
+    }
+    
+    .contact-btn{
+     font-size: var(--size-l);
+    }
+   
+   
+     
+   }
+   
+   
+   @media (min-width: 1280px) {
+   
+    .contact {
+     gap: rem;
+    }
+    
+   
+    
+    
+    .contact-h2 {
+     font-size: var(--size-5xl);
+    
+    }
+    
+    .contact-p {
+     font-size: var(--size-xl);
+    
+    }
+    
+    .contact-btn{
+     font-size: var(--size-xl);
+    }
+     
+   }
+   
+   
+   
+   @media (min-width: 1536px) {
+   
+   } 
+   

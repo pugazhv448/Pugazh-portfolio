@@ -1,0 +1,113 @@
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .contact-h2 {
+    font-size: var(--size-4xl);
+    margin-bottom: 1.5rem;
+    color: var(--clr-light);
+  }
+  
+  .contact-p {
+    font-size: var(--size-l);
+    max-width: 60ch;
+    margin: 0 auto 3rem;
+    color: var(--clr-slate400);
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+  }
+  
+  .form-label {
+    font-size: var(--size-base);
+    color: var(--clr-light);
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--clr-slate600);
+    border-radius: 0.25rem;
+    background-color: var(--clr-slate800);
+    color: var(--clr-light);
+    font-size: var(--size-base);
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: var(--clr-rose);
+  }
+  
+  .form-textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-btn {
+    align-self: center;
+    padding: 0.75rem 2rem;
+  }
+  
+  .status-message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    display: none;
+  }
+  
+  .success {
+    background-color: #003e8a;
+    color: #f0fdf4;
+    display: block;
+  }
+  
+  .error {
+    background-color: #991b1b;
+    color: #fef2f2;
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-h2 {
+      font-size: var(--size-3xl);
+    }
+    
+    .contact-p {
+      font-size: var(--size-base);
+    }
+    
+    .contact-form {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact {
+      padding: 2rem 1rem;
+    }
+    
+    .contact-h2 {
+      font-size: var(--size-2xl);
+    }
+  }

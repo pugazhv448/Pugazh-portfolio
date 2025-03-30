@@ -1,0 +1,133 @@
+.hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.hero-img{
+    border-radius:50% ;
+    width: 6rem;
+    height: 6rem;
+}
+.hero-h2{
+    color: var(--clr-slate800);
+    font-size: var(--size-base);
+    line-height: 0.9;
+
+}
+.hero-h1{
+    color: var(--clr-slate400);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+}
+.hero-p{
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+.hero-btn{
+    text-transform: capitalize;
+    font-size: var(--clr-sm);
+}
+
+
+@media (min-width: 475px) {
+    .hero{
+        gap: 1.5rem;
+
+    }
+    .hero-img{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .hero-h2{
+        font-size: var(--size-lg);
+        line-height: 0.9;
+    
+    }
+    .hero-h1{
+        font-size: var(--size-5xl);
+
+    }
+    .hero-p{
+        max-width: 60ch;
+        font-size: var(--size-base);
+    }
+    .hero-btn{
+        font-size: var(--clr-base);
+    }
+     
+ 
+}
+
+
+@media (min-width: 640px) {
+ 
+}
+
+
+@media (min-width: 768px) {
+ 
+}
+
+
+@media (min-width: 1024px) {
+    .hero-img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .hero-h2{
+        font-size: var(--size-2xl);
+        line-height: 0.9;
+    
+    }
+    .hero-h1{
+        font-size: var(--size-7xl);
+    }
+    .hero-p{
+        max-width: 60ch;
+        font-size: var(--size-lg);
+    }
+    .hero-btn{
+        font-size: var(--clr-lg);
+    }
+  
+}
+
+
+@media (min-width: 1280px) {
+    .hero{
+        gap:2rem
+    }
+    .hero-img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .hero-h2{
+        font-size: var(--size-4xl);
+        line-height: 0.9;
+    
+    }
+    .hero-h1{
+        font-size: var(--size-9xl);
+    }
+    .hero-p{
+        max-width: 60ch;
+        font-size: var(--size-xl);
+    }
+    .hero-btn{
+        font-size: var(--clr-xl);
+    }
+  
+}
+
+
+
+@media (min-width: 1536px) {
+
+} 

@@ -1,0 +1,323 @@
+.project {
+    text-align: center;
+   }
+   
+
+   
+   
+   .project-h2 {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-align: center;
+   }
+   
+   .project-h3 {
+   
+   font-size: var(--size-base);
+   margin-bottom: 1rem;
+   
+   }
+   
+   .wrapper{
+    position: relative;
+   }
+   
+   .wrapper::after {
+    content: '';
+    background-color: rgba(89, 80, 218, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color  0.4s;
+    border-radius: 6px;
+   }
+   
+   .wrapper:hover::after {
+    background-color: rgba(79, 70, 229, 0.2);
+   
+   
+   }
+   
+   
+   .project-p {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    text-align: center;
+    margin: 1rem auto;
+   }
+   
+   .project-p1 {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    margin: 1rem 0;
+   }
+   
+   .project-p2 {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+    margin-bottom: 1rem;
+   }
+   
+   .work-btn {
+    font-size: var(--size-sm);
+    
+   }
+   
+   .project-subtitle {
+    display: none;
+   }
+   
+   .project-conts {
+     padding-right: 1em;
+     padding-left: 1em;
+     text-align:center;
+   }
+   
+   
+   
+   
+   
+    
+   @media (min-width: 475px) {
+    .project-h2 {
+     font-size: var(--size-3xl);
+    
+    }
+    .project-p {
+     font-size: var(--size-base);
+     margin: 1.5rem auto;
+    }
+    
+    .project-h3 {
+   
+     font-size: var(--size-l);
+     margin-bottom: 1.5rem;
+     
+     }
+   
+     .project-p1 {
+      font-size: var(--size-base);
+      
+      margin: 1.5rem 0;
+     }
+     
+     .project-p2 {
+      font-size: var(--size-base);
+      
+      margin-bottom: 1.5rem;
+     }
+   
+     .work-btn {
+      font-size: var(--size-base);
+     }
+   
+   
+    
+    
+   }
+   
+   .project-conts:not(:last-child) {
+    margin-bottom: 3rem;
+    
+   
+   }
+   
+   
+   
+   
+   
+   @media (min-width: 640px) {
+    .project-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas:
+     'image1 content1'
+     'content2 image2';
+     justify-items: center;
+     align-items: center;
+     
+    }
+    
+   
+   
+    .project-image1 {
+     grid-area: image1;
+    }
+   
+    .project-image2 {
+     grid-area: image2;
+    }
+   
+    .project-contents1 {
+     grid-area: content1;
+    }
+    .project-contents2 {
+     grid-area: content2;
+    }
+   
+    .project {
+     padding: 0 1rem;
+    }
+   
+    .project-h3 {
+     display: none;
+    }
+   
+    
+    .project-p1 {
+     font-size: var(--size-xs);
+     
+     margin: 1em 0;
+    }
+    
+    .project-p2 {
+     font-size: var(--size-xs);
+     
+     margin-bottom: 1em;
+    }
+   
+    .work-btn {
+     font-size: var(--size-xs);
+    }
+   
+    .project-conts:not(:last-child) {
+     margin-bottom: 0;
+    }
+   
+    .project-subtitle {
+     display: block;
+     font-size: var(--size-base);
+    }
+
+    
+   
+    
+   }
+   
+   
+   @media (min-width: 768px) {
+   
+    .project-p1 {
+     font-size: var(--size-sm);
+     
+     
+    }
+    
+    .project-p2 {
+     font-size: var(--size-sm);
+     
+     
+    }
+   
+    .work-btn {
+     font-size: var(--size-sm);
+   
+    }
+     
+    .project-subtitle {
+     
+     font-size: var(--size-l);
+    }
+
+    
+    
+   
+   
+    
+   }  
+   
+   
+   @media (min-width: 1024px) {
+   
+    
+    .project-h2 {
+     font-size: var(--size-4xl);
+    
+    }
+    .project-p {
+     font-size: var(--size-l);
+     
+    }
+   
+   
+   
+    
+    .project-p1 {
+     font-size: var(--size-base);
+     
+     
+    }
+    
+    .project-p2 {
+     font-size: var(--size-base);
+     
+     
+    }
+   
+    .work-btn {
+     font-size: var(--size-base);
+   
+    }
+     
+    .project-subtitle {
+     
+     font-size: var(--size-xl);
+    }
+
+
+    
+   
+     
+   }
+   
+   
+   @media (min-width: 1280px) {
+   
+    .project-h2 {
+     font-size: var(--size-5xl);
+    
+    }
+    .project-p {
+     font-size: var(--size-xl);
+     margin: 2rem auto;
+    }
+   
+   
+    
+    .project-p1 {
+     font-size: var(--size-l);
+     
+     
+    }
+    
+    .project-p2 {
+     font-size: var(--size-l);
+     
+     
+    }
+   
+    .work-btn {
+     font-size: var(--size-l);
+   
+    }
+     
+    .project-subtitle {
+     
+     font-size: var(--size-2xl);
+    }
+
+    
+ 
+   
+    /* .project-grid {
+     width: 80%;
+     margin: 0 auto;
+    } */
+    
+   
+     
+   }
